@@ -1,5 +1,7 @@
 {
-    "build": "npm run build",
-    "start": "npm start",
-    "root": "server"
-  }
+  "build": {
+    "command": "npm run build"
+  },
+  "output": "build",
+  "root": "client"
+}
