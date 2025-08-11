@@ -33,8 +33,7 @@ import {
   Delete as DeleteIcon,
   Category as CategoryIcon,
   Folder as FolderIcon,
-  CheckCircle as CheckCircleIcon,
-  Cancel as CancelIcon
+  CheckCircle as CheckCircleIcon
 } from '@mui/icons-material';
 import { Category } from '../types';
 import { apiService } from '../services/api';
@@ -393,5 +392,6 @@ const CategoriesPage: React.FC = () => {
     </Box>
   );
 };
+
 
 export default CategoriesPage; 
