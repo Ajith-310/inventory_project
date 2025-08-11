@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
   Box,
-  Card,
   CardContent,
   TextField,
   Button,
@@ -220,5 +219,6 @@ const LoginPage: React.FC = () => {
     </Box>
   );
 };
+
 
 export default LoginPage; 
