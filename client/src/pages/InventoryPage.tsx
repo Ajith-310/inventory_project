@@ -43,9 +43,7 @@ import {
   Warning as WarningIcon,
   CheckCircle as CheckCircleIcon,
   Cancel as CancelIcon,
-  LocalShipping as ShippingIcon,
-  Store as StoreIcon,
-  Assessment as AssessmentIcon
+  Store as StoreIcon
 } from '@mui/icons-material';
 import { Inventory, Product, Warehouse, InventoryFormData } from '../types';
 import { apiService } from '../services/api';
@@ -154,16 +152,6 @@ const InventoryDialog: React.FC<InventoryDialogProps> = ({
         return newErrors;
       });
     }
-  };
-
-  const getProductName = (productId: string) => {
-    const product = products.find(p => p.id === productId);
-    return product ? product.name : 'Unknown Product';
-  };
-
-  const getWarehouseName = (warehouseId: string) => {
-    const warehouse = warehouses.find(w => w.id === warehouseId);
-    return warehouse ? warehouse.name : 'Unknown Warehouse';
   };
 
   return (
@@ -562,7 +550,7 @@ const InventoryPage: React.FC = () => {
 
   useEffect(() => {
     loadInventory();
-  }, [page, rowsPerPage, searchTerm, filters]);
+  }, [page, rowsPerPage, searchTerm, filters, loadInventory]);
 
   useEffect(() => {
     loadProducts();
@@ -944,5 +932,6 @@ const InventoryPage: React.FC = () => {
     </Box>
   );
 };
+
 
 export default InventoryPage; 
