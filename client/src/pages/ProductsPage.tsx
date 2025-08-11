@@ -25,10 +25,7 @@ import {
   Alert,
   Snackbar,
   Tooltip,
-  Fab,
   Grid,
-  Card,
-  CardContent,
   Switch,
   FormControlLabel,
   InputAdornment,
@@ -994,5 +991,6 @@ const ProductsPage: React.FC = () => {
     </Box>
   );
 };
+
 
 export default ProductsPage; 
