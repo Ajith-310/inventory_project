@@ -25,7 +25,6 @@ import {
   Dashboard as DashboardIcon,
   Inventory as InventoryIcon,
   ShoppingCart as ShoppingCartIcon,
-  People as PeopleIcon,
   Business as BusinessIcon,
   Category as CategoryIcon,
   Warehouse as WarehouseIcon,
@@ -40,14 +39,14 @@ import { UserRole } from '../types';
 
 const drawerWidth = 240;
 
-interface MenuItem {
-  text: string;
-  icon: React.ReactNode;
-  path: string;
-  roles?: UserRole[];
+interface NavMenuItem {
+     text: string;
+     icon: React.ReactNode;
+     path: string;
+     roles?: UserRole[];
 }
 
-const menuItems: MenuItem[] = [
+const menuItems: NavMenuItem[] = [
   { text: 'Dashboard', icon: <DashboardIcon />, path: '/dashboard' },
   { text: 'Products', icon: <InventoryIcon />, path: '/products' },
   { text: 'Inventory', icon: <WarehouseIcon />, path: '/inventory' },
@@ -264,5 +263,6 @@ const Layout: React.FC = () => {
     </Box>
   );
 };
+
 
 export default Layout; 
