@@ -550,7 +550,7 @@ const InventoryPage: React.FC = () => {
 
   useEffect(() => {
     loadInventory();
-  }, [page, rowsPerPage, searchTerm, filters, loadInventory]);
+  }, [page, rowsPerPage, searchTerm, filters]);
 
   useEffect(() => {
     loadProducts();
@@ -935,3 +935,4 @@ const InventoryPage: React.FC = () => {
 
 
 export default InventoryPage; 
+
