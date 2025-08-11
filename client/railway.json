@@ -2,6 +2,5 @@
   "build": {
     "command": "npm run build"
   },
-  "output": "build",
-  "root": "client"
+  "output": "build"
 }
